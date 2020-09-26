@@ -20,6 +20,13 @@ body{background:#fff;min-height:100%;height:100%;color:#314659!important;font-fa
 .postTitle a { font-weight: bold !important; }
 #myposts .PostList .postTitl2 a { font-weight: bold !important; }
 #taglist_main table tr td a { font-weight: bold !important; }
+
+/*收藏*/
+#div_digg .keepit{background:#fff;margin:0;display:inline-block;width:auto;height:32px;border-width:0;cursor:pointer;color:#fff;user-select:none;padding:0 10px;border-radius:5px;transition:color .2s linear,background-color .2s linear,border .2s linear,box-shadow .2s linear}
+#div_digg .keepit{background-color:#f60;border-color:#f60}
+#div_digg .keepit:hover{background-color:#ff6600b3;border-color:#ff6600b3}
+#div_digg .keepit .keepnum{color:snow;display:inline-block;font-size:15px;position:relative;top:5px;width:65px}
+#div_digg .keepit .keepnum:before{content:"\6536\85cf";font-size:15px;margin-right:5px}
 ```
 
 ## 博客侧边栏公告
@@ -65,5 +72,8 @@ body{background:#fff;min-height:100%;height:100%;color:#314659!important;font-fa
 	        target: '_self'
         }
     });
+
+    var insertDiv = '<div class="keepit" onclick="AddToWz(cb_entryId);return false;"><span class="keepnum" id="keep_count"></span></div>';
+    $(document).ready(function(){$('#div_digg').find('.diggit').eq(0).after(insertDiv);});
 </script>
 ```
