@@ -8,6 +8,14 @@ body{background:#fff;min-height:100%;height:100%;color:#314659!important;font-fa
 #ad_t2,#cnblogs_c1,#under_post_news,#cnblogs_c2,#under_post_kb {
     display:none; !important
 }
+#commentform_title a {
+    visibility: hidden !important;
+}
+
+.under-comment-nav.under-comment-box-nav a {
+    visibility: hidden !important;
+}
+
 .buryit {
     display: none;
     visibility: hidden;
