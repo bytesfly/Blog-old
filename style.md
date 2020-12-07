@@ -12,7 +12,7 @@ body{background:#fff;min-height:100%;height:100%;color:#314659!important;font-fa
     visibility: hidden !important;
 }
 
-.under-comment-nav.under-comment-box-nav a {
+.under-comment-nav a {
     visibility: hidden !important;
 }
 
@@ -35,6 +35,10 @@ body{background:#fff;min-height:100%;height:100%;color:#314659!important;font-fa
 #div_digg .keepit:hover{background-color:#ff6600b3;border-color:#ff6600b3}
 #div_digg .keepit .keepnum{color:snow;display:inline-block;font-size:15px;position:relative;top:5px;width:65px}
 #div_digg .keepit .keepnum:before{content:"\6536\85cf";font-size:15px;margin-right:5px}
+#top_nav {visibility: hidden !important;}
+.formobile {
+    display: none !important;
+}
 ```
 
 ## 博客侧边栏公告
